@@ -1,0 +1,68 @@
+/* Slide-in Form Styling */
+.slide-in-form {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Initially hidden */
+  width: 350px;
+  height: 100vh;
+  background: white;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.5s ease-in-out;
+  overflow-y: auto;
+}
+
+/* When form is active, slide it in */
+.slide-in-form.active {
+  right: 0;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section spacing */
+section {
+  padding: 80px 0;
+}
+
+/* Center images */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Carousel item alignment */
+.carousel-item {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Buttons styling */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Form styling */
+form {
+  max-width: 300px;
+  margin: auto;
+}
