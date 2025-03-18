@@ -1,8 +1,38 @@
-/* Slide-in Form Styling */
+/* General Styles */
+body {
+  font-family: "Lora", serif;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Section spacing */
+section {
+  padding: 80px 0;
+}
+
+/* Center images */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Resume modal */
+.modal-content {
+  border-radius: 10px;
+}
+
+/* Slide-in Contact Form */
 .slide-in-form {
   position: fixed;
   top: 0;
-  right: -100%; /* Initially hidden */
+  right: -100%;
   width: 350px;
   height: 100vh;
   background: white;
@@ -12,7 +42,6 @@
   overflow-y: auto;
 }
 
-/* When form is active, slide it in */
 .slide-in-form.active {
   right: 0;
 }
@@ -28,41 +57,61 @@
   cursor: pointer;
 }
 
-/* Navbar styling */
-.navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Section spacing */
-section {
-  padding: 80px 0;
-}
-
-/* Center images */
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-/* Carousel item alignment */
-.carousel-item {
-  text-align: center;
-  padding: 20px;
-}
-
-/* Buttons styling */
+/* Buttons */
 .btn-primary {
-  background-color: #007bff;
+  background-color: #004080 !important;
+  color: #ffffff !important;
+  font-weight: bold;
   border: none;
   transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #002f5f !important;
 }
 
-/* Form styling */
-form {
-  max-width: 300px;
-  margin: auto;
+.btn-primary,
+.btn-primary a {
+  opacity: 1 !important;
+}
+
+/* Project Card Styling */
+.project-link {
+  text-decoration: none;
+}
+
+.card {
+  width: 400px;
+  height: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+button {
+  color: #ffffff;
+  font-weight: bold;
+}
+.close-btn {
+  color: #333 !important;
+  background-color: transparent;
+  font-size: 24px;
+  border: 2px solid #333;
+  padding: 5px;
+}
+
+.close-btn:hover {
+  color: #000 !important;
+  border: 2px solid #000;
 }
